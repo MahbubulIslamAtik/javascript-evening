@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var on=true;
+        function start(){                 
+            let light=document.getElementById("light");
+            on=!on;            
+            if(on){             
+                light.style.cssText="width:140px;height:200px;background-image:url('img/light.jpg')";
+            }else{
+                light.style.cssText="width:130px;height:200px;background-image:url('img/light.jpg');background-position:-132px 0";
+            }
+            setTimeout("start()",1000);
+        }
+    </script>
+</head>
+<body onload="start()">
+    <div id="light"></div>   
+</body>
+</html>

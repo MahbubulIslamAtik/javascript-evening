@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <input type="text" id="txtX" size="4" /> +
+    <input type="text" id="txtY" size="4" /> <button onclick="add()">=</button>
+    <input type="text" id="txtZ" size="4" readonly />    
+    <span id="output"></span>        
+
+    <script>
+
+        function add(){
+              //Read Data
+              let x=document.getElementById("txtX").value;
+              let y=document.getElementById("txtY").value;
+
+              // Convert Data
+                  x=parseFloat(x);
+                  y=parseFloat(y);
+
+              // Process Data
+                  let z=x+y;                  
+              // Output
+              //let output=document.getElementById("output");
+               // output.innerHTML=z;
+                  document.getElementById("txtZ").value=z;
+                
+        }
+        
+    </script>
+
+</body>
+</html>

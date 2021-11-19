@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+            let body = document.getElementsByTagName('body')[0];   
+            let colors=["skyblue","red","green","yellow","pink","purple","blue","gray","black","navy"];
+            
+            for(i=0;i<20;i++){
+                let div=document.createElement('div');
+                
+                let x=Math.random()*screen.width;
+                let y=Math.random()*screen.height;
+               
+                let color=colors[Math.floor(Math.random()*colors.length)];
+                
+                div.style.cssText="position:absolute;left:"+x+"px;top:"+y+"px;width:50px;height:50px;border-radius:50%;background-color:"+color+";";
+                body.appendChild(div);
+ 
+            }   
+
+            setTimeout("display()",100);
+        }
+ 
+
+     </script>
+</head>
+<body onload="display()">
+   <button onclick="display()">Add</button>
+   
+
+</body>
+</html>

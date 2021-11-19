@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+       
+        //let x=function(){};
+        //let y=typeof x;
+        //document.write(y);    
+        
+        with(document){
+
+            write(typeof("John"))                 // Returns "string"
+            writeln();
+            write(typeof 3.14)                   // Returns "number"
+            writeln();
+            write(typeof 0xA)                    // Returns "number"
+            writeln();
+            write(typeof 3e2)                    // Returns "number"
+            writeln();
+            write(typeof /abc/)                  // Returns "object"
+            writeln();
+            write(typeof NaN)                    // Returns "number"
+            writeln();
+            write(typeof false)                  // Returns "boolean"
+            writeln();
+            write(typeof [1,2,3,4])              // Returns "object"
+            writeln();
+            write(typeof {name:'John', age:34})  // Returns "object"// JSON object
+            writeln();
+            write(typeof new Date())             // Returns "object"
+            writeln();
+            write(typeof function () {})         // Returns "function"
+            writeln();
+            write(typeof myCar)                  // Returns "undefined"
+            writeln();
+            write(typeof null)                   // Returns "object"
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

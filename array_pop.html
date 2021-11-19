@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button onclick="Pop()">Pop</button>
+  <div id="output"></div>
+    <script>
+      
+     var names=["Jahid","Rahim","Karim","Abul","Kalam","Azad"];
+
+      function Pop(){
+
+        let name =window.names.pop()
+
+       let output= document.getElementById("output");
+       output.innerHTML=name+"<br>";
+       output.innerHTML+=names;
+
+      }
+    </script>
+</body>
+</html>

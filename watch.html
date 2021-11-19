@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function start(){
+            let date=new Date();
+            let m=date.getMinutes();
+            let s=date.getSeconds();
+            let h=date.getHours();
+            let a="";
+            if(h>12){
+                h=h-12;
+                a="PM"
+            }else{
+                a="AM"
+            }
+            let ms=date.getMilliseconds();
+            let div=document.getElementById("time");
+            div.innerHTML=h+":"+m+":"+s+" "+a;
+            setTimeout("start()",1000);
+        }
+    </script>
+</head>
+<body onload="start()">
+    <div id="time"></div>
+</body>
+</html>

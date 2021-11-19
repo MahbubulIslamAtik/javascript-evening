@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       function add(a,b){           
+           let z=a+b;
+           return z;           
+       }
+
+       function sub(a,b){
+           return a-b;
+       }
+
+       function div(a,b){
+            let z=a/b;
+            document.write(z);
+       }
+
+       //---------Caller----------------
+       
+       let z=add(3,5);
+       document.write(z+"<br>");
+       let y=add(4,6);
+       document.write(z+"<br>");
+
+       let a=5;
+       let b=5;
+       let m=sub(a,b);
+       document.write(m+"<br>");
+
+       let n=sub(50,33);
+       document.write(n+"<br>");
+
+       div(4,2);
+
+    </script>
+</body>
+</html>
